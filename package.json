@@ -1,0 +1,161 @@
+{
+  "private": true,
+  "name": "mercari-frontend-skill-test",
+  "version": "1.0.0",
+  "author": "Kiran Kumar Chaudhary <hellokiran2020@gmail.com>",
+  "scripts": {
+    "dev": "next dev",
+    "build": "next build",
+    "test": "jest",
+    "test:watch": "jest --watch",
+    "test:coverage": "jest --coverage"
+  },
+  "dependencies": {
+    "@material-ui/core": "^4.11.2",
+    "@material-ui/icons": "^4.11.2",
+    "@material-ui/lab": "^4.0.0-alpha.57",
+    "@material-ui/styles": "^4.11.2",
+    "@material-ui/system": "^4.11.2",
+    "axios": "^0.19.2",
+    "mobx": "6.1.8",
+    "mobx-react": "^7.0.5",
+    "mobx-react-lite": "^3.1.6",
+    "mobx-state-tree": "5.0.1",
+    "next": "10.0.3",
+    "ramda": "^0.27.1",
+    "react": "17.0.0",
+    "react-dom": "17.0.0"
+  },
+  "devDependencies": {
+    "@testing-library/dom": "^7.30.0",
+    "@testing-library/jest-dom": "^5.11.9",
+    "@testing-library/react": "^11.2.5",
+    "@testing-library/user-event": "^12.8.3",
+    "@types/jest": "^26.0.20",
+    "@types/node": "^14.0.27",
+    "@types/react": "^16.9.44",
+    "@typescript-eslint/eslint-plugin": "^2.15.0",
+    "@typescript-eslint/parser": "^2.15.0",
+    "babel-eslint": "10.0.3",
+    "babel-jest": "^26.6.3",
+    "eslint": "6.8.0",
+    "eslint-config-prettier": "^6.9.0",
+    "eslint-config-react-app": "^5.1.0",
+    "eslint-plugin-flowtype": "^5.3.1",
+    "eslint-plugin-import": "^2.19.1",
+    "eslint-plugin-jsx-a11y": "^6.2.3",
+    "eslint-plugin-prettier": "^3.3.1",
+    "eslint-plugin-react": "^7.17.0",
+    "eslint-plugin-react-hooks": "^2.3.0",
+    "jest": "^26.6.3",
+    "jest-dom": "^4.0.0",
+    "next-transpile-modules": "^6.0.0",
+    "prettier": "2.2.1",
+    "tslint-react-hooks": "^2.2.2",
+    "typescript": "^3.9.7"
+  },
+  "jest": {
+    "collectCoverageFrom": [
+      "src/**/*.{js,jsx,tsx}",
+      "src/*.{js,ts,tsx}",
+      "!src/**/*.d.ts",
+      "!src/common/tests/*.js"
+    ],
+    "coverageReporters": [
+      "json-summary",
+      "json",
+      "lcov",
+      "text",
+      "clover"
+    ]
+  },
+  "browserslist": {
+    "production": [
+      ">0.2%",
+      "not dead",
+      "not op_mini all"
+    ],
+    "development": [
+      "last 1 chrome version",
+      "last 1 firefox version",
+      "last 1 safari version",
+      "ie >= 9"
+    ]
+  },
+  "eslintConfig": {
+    "parser": "@typescript-eslint/parser",
+    "extends": [
+      "react-app",
+      "plugin:prettier/recommended",
+      "eslint:recommended",
+      "plugin:@typescript-eslint/recommended",
+      "plugin:react/recommended"
+    ],
+    "parserOptions": {
+      "useJSXTextNode": true,
+      "ecmaVersion": 2017,
+      "sourceType": "module",
+      "ecmaFeatures": {
+        "modules": true,
+        "jsx": true
+      }
+    },
+    "env": {
+      "es6": true,
+      "browser": true,
+      "node": true
+    },
+    "plugins": [
+      "prettier",
+      "react",
+      "@typescript-eslint",
+      "react-hooks"
+    ],
+    "rules": {
+      "prettier/prettier": [
+        "error",
+        {
+          "singleQuote": true
+        }
+      ],
+      "key-spacing": [
+        1,
+        {
+          "mode": "strict"
+        }
+      ],
+      "keyword-spacing": [
+        1,
+        {}
+      ],
+      "no-multi-spaces": 1,
+      "no-irregular-whitespace": 1,
+      "react/jsx-closing-bracket-location": 1,
+      "react/jsx-equals-spacing": 1,
+      "react/jsx-no-undef": 1,
+      "react-hooks/rules-of-hooks": "error",
+      "react-hooks/exhaustive-deps": "warn",
+      "react/no-unused-prop-types": 1,
+      "@typescript-eslint/explicit-function-return-type": "off",
+      "@typescript-eslint/indent": [
+        "error",
+        2
+      ],
+      "no-unused-vars": "warn",
+      "@typescript-eslint/no-unused-vars": [
+        "error"
+      ],
+      "@typescript-eslint/member-delimiter-style": "off"
+    },
+    "overrides": [
+      {
+        "files": [
+          "*.ts",
+          "*.tsx,",
+          "*.js",
+          "*.jsx"
+        ]
+      }
+    ]
+  }
+}
